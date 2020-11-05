@@ -96,7 +96,7 @@ int main(void) {
       else printf("\t%g\t|",*(output+i));
     }
   } 
-  printf("\n\nKey:\nNormal\t-\tAverage light of all 5 armour slots to required to hit target.\nClass\t-\tAverage light of 4 armour slots (excluding 21 light class item) required to hit target.\nMask\t-\tAverage light of 4 armour slots (excluding 0 light FOTL mask) required to hit target.\nBoth\t-\tAverage light of 3 armour slots (excluding Class & Mask) required to hit target.\n!@#~\t-\tAverage light required is above current power cap (%d).\n\n",seasoncap);
+  printf("\n\nKey:\nNormal\t-\tAverage light of all 5 armour slots required to hit target.\nClass\t-\tAverage light of 4 armour slots (excluding 21 light class item) required to hit target.\nMask\t-\tAverage light of 4 armour slots (excluding 0 light FOTL mask) required to hit target.\nBoth\t-\tAverage light of 3 armour slots (excluding Class & Mask) required to hit target.\n!@#~\t-\tAverage light required is above current power cap (%d).\n\n",seasoncap);
 
 return 0;
 }
