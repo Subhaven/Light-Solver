@@ -86,7 +86,8 @@ int main(void) {
   printf("Encounter\t|\tTarget\t||\tNormal\t|\tClass\t|\tMask\t|\tBoth\t|");
   for(j=0;j<n;j++){
     output = lightcalc(light,targetbuffer[j]);
-    printf("\n\t%d\t\t|\t%d\t\t||",j+1,targetbuffer[j]);
+    if(targetbuffer[j]<1000)printf("\n\t%d\t\t|\t%d\t\t||",j+1,targetbuffer[j]);
+    else printf("\n\t%d\t\t|\t%d\t||",j+1,targetbuffer[j]);
     for(i=0;i<4;i++){
       if(*(output+i)>seasoncap){
         printf("\t!@#~\t|");
